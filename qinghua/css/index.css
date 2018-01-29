@@ -1,0 +1,248 @@
+body{
+	width: 100%;
+	height: 100%;
+	background-color:rgb(242,242,242);
+}
+#container{
+	width:100%;
+	max-width:680px;
+	margin: 0 auto;
+	background: #ffffff;
+	padding-bottom:6rem;
+}
+#container #head{
+	width: 100%;
+	text-align: center;
+}
+#container #head .tou{
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+#container #head img{
+	width: 80%;
+}
+/*底部*/
+#foot{
+	width:100%;
+	max-width: 680px;
+	position:fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #000000;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-around;
+	padding:10px 15px;
+	z-index: 1000;
+}
+#foot p{
+	text-align: center;
+	font-size:1.2rem;
+}
+#foot p a{
+	font-size:2rem;
+}
+/*选项卡    项目介绍*/
+#tab #tab01{
+    width: 100%;
+}
+#tab01 .tabTitle{
+    text-align: center;
+}
+#tab01 .tabTitle img{
+     width:30%;
+     height: auto;
+}
+#tab01 .tabInfo{
+     padding:10px 20px; 
+     font-size: 20px;
+     text-indent: 2em;
+     font-weight:500;
+     line-height: 1.6;
+     color: rgb(0,0,0);
+     margin-bottom: 20px;
+}
+#tab01 .detailInfo{
+     margin:10px 20px; 
+     border:1px solid black;
+     list-style:none;
+     margin-bottom: 20px;
+}
+#tab01 .detailInfo li{
+     font-size: 20px;
+     line-height: 1.5;
+}
+#tab01 .bottom{
+      width: 100%;
+      line-height: 20px;
+      border-bottom:2px dotted rgb(170,141,107);
+      margin-bottom: 20px;
+}
+#tab01 .more{
+      padding:15px 20px;
+}
+#tab01 .more img{
+      width: 25%;
+      height: auto;
+      margin-bottom:15px;
+      margin-top: -20px;   
+}
+#tab01 .btn{
+      width:100%;
+      text-align: center;
+}
+#tab01 .btn button{
+      width:42%;
+      display: inline-block;
+      padding-top:25px;
+      padding-bottom:25px;
+      background-color:#aa8d6b;
+      color: #FFFFFF;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      outline: none;
+      border: none;
+}
+#tab01 .btn button:hover{
+      box-shadow:5px 5px 5px darkgray;
+}
+/*选项卡二   联系方式*/
+#tab02{
+     width:100%;
+     
+}
+#tab02 .link_title{
+    margin-top: -10px;
+    text-align: center;
+}
+#tab02 .link_info{
+    width:100%;
+    padding:1rem 2rem;
+}
+.link_info li{
+    width:100%;
+    height: auto;
+    list-style: none;
+    padding-bottom:15px;
+}
+.link_info li .icon{
+	display: inline-block;
+	font-size: 2rem;
+	margin-right:0.5rem;
+	color: rgb(24,215,169);
+}
+.link_info li .iconOne{
+	position: relative;
+	top:-1.5rem;
+}
+.link_info li .link{
+	display: inline-block;
+	line-height:1.5rem;
+}
+.erweima{
+	text-align: center;
+	font-size:1rem;
+}
+.erweima img{
+	width:30%;
+}
+.site{
+	padding-left:1.5rem;
+	margin-top:1rem;
+}
+.site .icon-location{
+	display:inline-block;
+	font-size:2rem;
+	color: rgb(24,215,169);
+	margin-right:0.5rem;
+	
+}
+.site .siteInfo{
+	display: inline-block;
+	font-size: 1rem;
+}
+.map{
+	width:100%;
+	height:20rem;
+	padding:1.5rem;
+	overflow: hidden;
+}
+/*报名方式*/
+#tab03 .tab03_info{
+	padding:10px 1.5rem;
+	line-height: 1.5;
+	font-size: 1.2rem;
+}
+.sheet{
+	border-collapse: collapse;
+	width:95%;
+	margin-left: 2.5%;
+	text-align: center;
+	box-sizing: border-box;
+}
+.tab03_ts{
+	width:100%;
+	margin-top:15px;
+	padding-left:3rem;
+}
+.tab03_ts .icon{
+	display: inline-block;
+	margin-right:0.3rem;
+	color: aquamarine;
+	font-size:2rem;
+	position: relative;
+	top:0.4rem;
+}
+.tab03_ts li{
+	width:auto;
+	height:2rem;
+	font-size:1.2rem;
+	line-height:2rem;
+	font-weight: 600;
+	margin-bottom:.7rem;
+}
+#tab03 .tab03_infos{
+	padding:5px 1.5rem;
+	font-size:1.1rem;
+	line-height: 1.5;
+}
+#tab03 .tab03_notice{
+	padding:5px 1.5rem;
+}
+.tab03_notice dd{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+.project{
+	margin-top:15px;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1.7;
+}
+.project button{
+	display: inline-block;
+	margin-bottom:20px;
+	width:35%;
+	padding-top:1rem;
+	padding-bottom: 1rem;
+	color: #FFFFFF;
+	font-size: 1.2rem;
+	font-weight:600;
+	background-color:#aa8d6b;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+}
+.project button a{
+	color: #FFFFFF;
+}
+.project button:hover{
+	box-shadow: 10px 5px 5px darkgray;
+}
+
+

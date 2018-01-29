@@ -1,0 +1,545 @@
+body{
+	width: 100%;
+	height: 100%;
+	background-color:rgb(242,242,242);
+}
+#container{
+	width:100%;
+	max-width:800px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+#container #head_float{
+	width:100%;
+	max-width: 800px;
+	background:#ab2945;
+	padding:15px; 
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+}
+#head_float .float_left{
+	width:180px;
+	height:30px;
+}
+#head_float .float_right{
+	width: 25px;
+	height:17px;
+	position: relative;
+	top:5px;
+}
+/*导航栏目*/
+#colum{
+	width:100%;
+	max-width:800px;
+	position: fixed;
+	top:60px;
+	right:0;
+	left:0;
+	margin: 0 auto;
+	display: none;
+    z-index: 1000;
+}
+#colum dl{
+	width:7rem;
+	position:relative;
+	top:0px;
+	left:100%;
+	transform: translateX(-7rem);
+	background:rgba(171,41,69,0.9);
+    z-index:1000;
+}
+#colum dl dd{
+	text-align: center;
+	padding:0.6rem 1rem;
+}
+#colum dl dd a{
+	color:#FFFFFF;
+	font-size:1rem;
+}
+#P_features{
+	width:100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.headerLogo{
+	width:100%;
+	height: auto;
+	margin-top:60px;
+}
+#P_features .features{
+	margin-top: 15px;
+	width:100%;
+	height: auto;
+}
+#P_features .features_info{
+	font-size:1.3rem;
+	line-height: 2rem;
+	margin:10px auto;
+}
+/*招生宣讲*/
+#Preach{
+	width: 100%;
+	height:auto;
+	background-image: url(../img/student/m2.jpg);
+	background-size: cover;
+	padding:1rem 0.8rem;
+	overflow: hidden;
+	
+}
+#Preach .preach_logo img{
+	width: 100%;
+	height: auto;
+}
+#Preach .tab_nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	color: red;
+}
+#Preach .tab_nav span{
+	color: #FFFFFF;
+}
+#Preach .xian{
+	width:100%;
+	height:10px;
+	border-bottom: 1px solid rgb(200,160,100);
+	display: flex;
+	justify-content: space-around;
+}
+#Preach .xian .guang{
+	display:inline-block;
+	width:10px;
+	height: 10px;
+	background: #FFFFFF;
+	border-radius: 50%;
+	position: relative;
+	top:5px;
+	opacity: 0.3;
+}
+#tab_nav{
+	width:100%;
+}
+.tab_contain ul{
+	width:70%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 25px;
+	overflow: hidden;
+}
+.tab_contain ul li{
+	display: block;
+	float: left;
+	width:45%;
+	height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left:4%;
+    margin-bottom: 15px;
+    border: 1px solid rgb(200,160,100);	
+    color: #FFFFFF;
+    text-align: center;
+} 
+.tab_contain .tab_site{
+	font-size:0.8rem;
+	font-weight: 800;
+}
+.tab_contain .tab_date{
+	font-size:0.8rem;
+	font-weight: 800;
+}
+.tab_contain .tab_start{
+	font-size:0.8rem;
+}
+/*报考流程*/
+#liucheng{
+	width: 100%;
+	height: auto;
+	padding:25px 15px 20px 15px;
+	background-image:url(../img/student/bg21.jpg);
+	background-size: contain;
+}
+#liucheng .baokao img{
+	width: 100%;
+	height: auto;
+}
+#liucheng .liu_time{
+	width:100%;
+	line-height:1rem;
+	font-size:1rem;
+	color:darkred;
+	margin-bottom:1rem;
+}
+#liucheng .liu_time .time{
+	width: 1.8rem;
+	height: auto;
+	position: relative;
+	top:0.5rem;
+	margin-left:1rem;
+}
+#liucheng .liankao{
+	width: 100%;
+	height: auto;
+}
+#liucheng .explain{
+	width: 100%;
+	padding:10px 5px;
+	background-color: #ba9c79;
+	color: #FFFFFF;
+	font-size: 0.7rem;
+}
+#liucheng .explain p{
+	margin: 5px 0;
+}
+.time_arrange{
+	width:100%;
+	font-family: "微软雅黑";
+	font-size: 0.7rem;
+}
+.time_arrange tr{
+	width: 100%;
+	display: block;
+    padding:10px 0;
+	border-top: 1px solid #e9d4da;
+}
+.time_arrange tr td{
+	display: inline-block;
+	width:24%;
+	text-align: center;
+}
+.time_arrange tr td:first-child{
+	text-align:left;
+	color:#af1b40;
+	font-weight: 600;
+}
+.time_arrange tr:last-child{
+	border-bottom: 1px solid #e9d4da;
+}
+.time_arrange tr td button{
+	padding:5px 10px;
+	background-color: #d72753;
+	color: #FFFFFF;
+	border: 0;
+	outline: none;
+}
+.biao_info{
+	width:100%;
+	padding:10px 0;
+	margin:20px 0 15px 0;
+	text-align: center;
+	background-color: darkred;
+	color: #FFFFFF;
+	font-size: 1rem;
+}
+.biao_info02{
+	width: 100%;
+	padding:10px 0;
+	text-align: center;
+	background-color: darkgoldenrod;
+	color: #FFFFFF;
+	font-size: 1rem;
+}
+/*招生政策*/
+#policy{
+	width:100%;
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+}
+#policy .policy_title img{
+	width: 100%;
+	height: auto;
+}
+#policyNav{
+	width:90%;
+	height: auto;
+	margin: 15px auto;
+	overflow: hidden;
+}
+#policyNav li{
+	width:33.3%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	color: #333;
+	font-weight: 800;
+	background-color:#f7e8ec;
+	float: left;
+}
+#policyCon>div{
+	width: 100%;
+	padding:1rem 0.8rem;
+}
+#policyCon>div>p{
+	font-size: 0.8rem;
+	line-height: 1.8;
+	margin-bottom: 0.5rem;
+}
+#policyCon>div>dl>dd{
+	font-size: 0.8rem;
+	line-height: 1.8;
+}
+/*项目介绍*/
+#introduce{
+	width: 100%;
+	padding:1rem 0.8rem;
+	background-image: url(../img/student/sj_02.jpg);
+	background-size:100% 100%;
+}
+#introduce .introduce_title img{
+	width: 100%;
+}
+#introduce dl dd{
+	font-size: 0.8rem;
+	line-height: 2;
+	color: #fff;
+}
+#introduce dl dd b{
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+/*学生构成*/
+#student{
+	width: 100%;
+	padding:1rem 1rem 2rem 1rem;
+	background-color:#f2f3f8;
+}
+#student>p{
+	margin-top:0.6rem;
+}
+#student>p>img{
+	width: 100%;
+	height: auto;
+}
+#student dl{
+	width:90%;
+	margin: 10px auto;
+	overflow: hidden;
+}
+#student dl dd{
+	width:22%;
+	height: auto;
+}
+#student dl dd img{
+	width: 100%;
+	height: auto;
+}
+#student dl dd.st_left{
+	float: left;
+}
+#student dl dd.st_right{
+	float:right;
+}
+
+#target ul{
+	width: 100%;
+	padding:0;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+#target ul li{
+	width:50%;
+	height: auto;
+	float: left;
+}
+#target ul li img{
+	width:100%;
+	height:80%;
+}
+#target ul li.text{
+	width: 50%;
+	padding:1rem;
+}
+#target ul li p{
+	font-size: 0.8rem;
+	line-height: 1.5;
+	color: #333333;
+}
+#target ul li h4{
+	color: red;
+	margin-bottom:5px;
+}
+/*课程设置*/
+#setting{
+	width:100%;
+	height: 27rem;
+	padding:10px 15px 0 15px;
+	position: relative;
+	overflow: hidden;
+}
+#setting .settingTitle img{
+	width: 100%;
+	height:5rem;
+}
+#setting dl{
+	width:200%;
+	height:21rem;
+	position: absolute;
+	left: 0;
+	top:6rem;
+}
+#setting dl dd{
+	width:23%;
+	height:21rem;
+	padding:1rem 0.5rem;
+	background-image:url(../img/student/yellow_c.png);
+	background-size:100% 100%;
+	float: left;
+	margin:auto 1%;
+	text-align: center;
+}
+#setting dl dd li{
+	font-size: 0.8rem;
+	color: #FFFFFF;
+}
+#setting dl ul li:nth-of-type(2){
+	margin-top:5px;
+	margin-bottom:10px;
+}
+.settingDirection .setLeft{
+	position: absolute;
+	top:13rem;
+	left:0.7rem;
+	z-index: 100;
+}
+.settingDirection .setRight{
+    position: absolute;
+	top:13rem;
+	right:0.7rem;
+	z-index: 1000;	
+}	
+/*中外师资*/
+#teacher{
+	width:100%;
+	background-image: url(../img/student/005.jpg);
+	background-size: 100% 100%;
+	margin-top:1rem;
+	padding:1rem 0;
+}
+#teacher .teacherTitle img{
+	width: 100%;
+	height: auto;
+}
+.teacherInfo{
+	width: 100%;
+	padding:0.8rem 1rem;
+}
+.teacherInfo h4{
+	text-align: center;
+	color:#ce9d64;
+}
+.teacherInfo p{
+	width: 100%;
+	line-height: 1.5;
+	color: #eda4b6;
+	font-size: 0.8rem;
+}
+.teacherNav{
+	padding-top: 1.5rem;
+	width:100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+	
+}
+.teacherNav li{
+    color: #FFFFFF;
+    margin:0.5rem 0.8rem;
+    padding-bottom: 0.6rem;
+	font-size: 0.8rem;
+	/*border-bottom: 1px solid #FFFFFF;*/
+}
+ /*师资力量轮播图*/
+.teacherCon{
+	width:100%;
+	height: 25rem;
+
+}
+.teacherCon .donghua{
+	width:100%;
+	height: 100%;
+	padding:0.5rem;
+    position: relative;
+	overflow: hidden;
+}
+.teacherCon .donghua dl{
+	width: 300%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.donghua dl dd{
+	width:11.11%;
+	height: auto;
+	box-sizing: border-box;
+	padding:1rem;
+	float: left;
+	position: relative;
+}
+.donghua dl dd img{
+	width:100%;
+	height: auto;
+}
+.donghua dl dd .P_message{
+	font-size: 0.8rem;
+	color:#eda4b6;
+}
+.donghua dl dd h5{
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.swiper-slide img{
+	width: 100%;
+	height: auto;
+}
+.swiper-slide{
+	padding-top:1.5rem;
+}
+.swiper-slide h5{
+	padding-top:1.5rem;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+.swiper-slide .P_message{
+	color: #EDA4B6;
+}
+/*联系方式*/
+#link{
+	width:100%;
+	padding:1.2rem 1rem;
+}
+#link .linkTitle img{
+	width: 100%;
+	height: auto;
+}
+#link ul li{
+	width: 100%;
+	list-style: none;
+	line-height:2;
+	color: #333333;
+}
+#link ul li a{
+	color: darkgray;
+}
+#link .erweima{
+	width: 100%;
+	padding-top:2rem;
+	text-align: center;
+}
+#link .erweima img{
+	width:50%;
+	height: auto;
+}
+#link .erweima b{
+	font-weight: normal;
+	color:#333333;
+}
+
+
+	
+

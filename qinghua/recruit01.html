@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/recruit.css" />
+		<!--相册-->
+		<link rel="stylesheet" href="css/dist/photoswipe.css" />
+		<link rel="stylesheet" href="css/dist/default-skin.css" />
+		<!--<link rel="stylesheet" href="css/dist/site.css" />-->
+	</head>
+    <style>
+		.bsPromo2>a{
+			display: inline-block;
+			width:15px;
+		}
+		.IntroduceLeft{
+			padding-bottom:30px;
+		}
+		.IntroduceLeft ul li p{
+			font-size:1.4rem;
+		}
+		.LinkRight p{
+			font-size:1.4rem;
+		}
+	</style>
+	<body>
+		<div id="bigContainer">
+			<div class="mask" style="display:block;">
+				<img class="down" src="img/curuit/zs.png" />
+			</div>
+			<div class="curitCon" style="display:none">
+				<div class="headCurit clearfix">
+					<ul class="navCurit clearfix">
+						<li class="videoForum" style="border-bottom: 2px solid darkred;">视屏论坛</li>
+						<li class="picAll">论坛图集</li>
+						<li class="proIntroduce" data-show=0>项目介绍</li>
+					</ul>
+					
+					<div style="float:right;height:66px;padding-top:22px;">
+						<div class="bshare-custom icon-medium-plus">
+							<a title="分享到" href="" id="bshare-shareto" class="bshare-more">分享到</a>
+							<a title="分享到微信" class="bshare-weixin"></a>
+							<a title="分享到QQ好友" class="bshare-qqim"></a>
+							<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+							<!--<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>-->
+						</div>
+						<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+						<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+					</div>
+				</div>
+				<div class="conCurit">
+					<!--视屏-->
+					<div id="videoForum" style="display:block;">
+						<dl class="clearfix">
+							<dd>
+								<div class="videoMask">
+									<img src="img/curuit/live-logo.png" onclick="startVideo('videoOne')" />
+								</div>
+								<video width="100%" height="auto" id="videoOne" poster="img/curuit/v01.png">
+									<source src="http://video.mbachina.com/zt/2017/pbcsfmba/video/xmgs1.mp4?utm=qd&amp;wx" type="video/webm"> 您的浏览器不支持Video标签。
+								</video>
+								<p class="font">
+									<a>黄明 </a>康奈尔大学约翰逊管理学院金融学教授</p>
+								<p class="font">01项目概述&nbsp;&nbsp;02项目优势&nbsp;&nbsp;03课程体系&nbsp;&nbsp;04报考流程</p>
+							</dd>
+							<dd>
+								<div class="videoMask">
+									<img src="img/curuit/live-logo.png" onclick="startVideo('videoTwo')" />
+								</div>
+								<video width="100%" height="auto" id="videoTwo" poster="img/curuit/v02.png">
+									<source src="http://video.mbachina.com/zt/2017/pbcsfmba/video/txjh1.mp4?utm=qd&amp;wx" type="video/webm"> 您的浏览器不支持Video标签。
+								</video>
+								<p class="font">
+									<a>田轩</a>昆吾九鼎金融学讲席教授，清华大学五道口金融学院院长助理兼金融MBA教育中心主任</p>
+								<p class="font">教授公开课《企业风险投资：一种新的组织形式》（精华版）</p>
+							</dd>
+							<dd>
+								<div class="videoMask">
+									<img src="img/curuit/live-logo.png" onclick="startVideo('videoThree')" />
+								</div>
+								<video width="100%" height="auto" id="videoThree" poster="img/curuit/v03.png">
+									<source src="http://video.mbachina.com/zt/2017/pbcsfmba/video/wz1.mp4?utm=qd&amp;wx" type="video/webm"> 您的浏览器不支持Video标签。
+								</video>
+								<p class="font">
+									<a>王震 </a>2016级优秀学生代表</p>
+								<p class="font">五矿有色金属控股限公司锑事业部规划投资部高级经理</p>
+							</dd>
+							<dd>
+								<div class="videoMask">
+									<img src="img/curuit/live-logo.png" onclick="startVideo('videoFour')" />
+								</div>
+								<video width="100%" height="auto" id="videoFour" poster="img/curuit/v04.png">
+									<source src="http://video.mbachina.com/zt/2017/pbcsfmba/video/gxr1.mp4?utm=qd&amp;wx" type="video/webm"> 您的浏览器不支持Video标签。
+								</video>
+								<p class="font">
+									<a>郭心蕊 </a>2016级优秀学生代表</p>
+								<p class="font">深圳市同创至盛投资控股有限公司投资经理</p>
+							</dd>
+						</dl>
+					</div>
+					<!--图集-->
+					<div id="picAll" style="display: none;">
+						<!--<ul class="clearfix">
+							<li>
+								<img src="img/curuit/lttj-1.jpg" width="100%" />
+								<p style="text-align: center;">清华大学五道口金融学院</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-3.jpg" width="100%" />
+								<p style="text-align: center;">签到现场</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-4.jpg" width="100%" />
+								<p style="text-align: center;">签到现场</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-5.jpg" width="100%" />
+								<p style="text-align: center;">说明会现场</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-6.jpg" width="100%" />
+								<p style="text-align: center;">康奈尔大学金融学教授黄明教授</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-7.jpg" width="100%" />
+								<p style="text-align: center;">清华大学五道口金融学院院长助理兼MBA教育中心主任、昆吾九鼎金融学讲席教授田轩教授</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-8.jpg" width="100%" />
+								<p style="text-align: center;">2016级优秀学生代表郭心蕊同学</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-9.jpg" width="100%" />
+								<p style="text-align: center;">2016级优秀学生代表王震同学</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-10.jpg" width="100%" />
+								<p style="text-align: center;">Q&A环节</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-11.jpg" width="100%" />
+								<p style="text-align: center;">Q&A环节</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-12.jpg" width="100%" />
+								<p style="text-align: center;">现场认真听讲解的学生</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-13.jpg" width="100%" />
+								<p style="text-align: center;">现场认真听讲解的学生</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-14.png" width="100%" />
+								<p style="text-align: center;">现场认真听讲解的学生</p>
+							</li>
+							<li>
+								<img src="img/curuit/lttj-2.jpg" width="100%" />
+								<p style="text-align: center;">清华-康奈尔双学位金融MBA招生说明会</p>
+							</li>
+						</ul>-->
+						<!--相册-->
+						<article class="htmleaf-container">
+							<div class="row">
+								<div id="demo-test-gallery" class="demo-gallery clearfix">
+									<a href="img/curuit/lttj-1.jpg" data-size="1600x1600" data-med="img/curuit/lttj-1.jpg" data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+										<img src="img/curuit/lttj-1.jpg" alt="" />
+										<figure>清华大学五道口金融学院</figure>
+									</a>
+									<a href="img/curuit/lttj-2.jpg" data-size="1600x1067" data-med="img/curuit/lttj-2.jpg" data-med-size="1024x683" data-author="Thomas Lefebvre">
+										<img src="img/curuit/lttj-2.jpg" alt="" />
+										<figure>清华-康奈尔双学位金融MBA招生说明会</figure>
+									</a>
+									<a href="img/curuit/lttj-3.jpg" data-size="1600x1067" data-med="img/curuit/lttj-3.jpg" data-med-size="1024x683" data-author="Michael Hull">
+										<img src="img/curuit/lttj-3.jpg" alt="" />
+										<figure>签到现场</figure>
+									</a>
+									<a href="img/curuit/lttj-4.jpg" data-size="1600x1067" data-med="img/curuit/lttj-4.jpg" data-med-size="1024x683" data-author="Ales Krivec">
+										<img src="img/curuit/lttj-4.jpg" alt="" />
+										<figure>签到现场</figure>
+									</a>
+									<a href="img/curuit/lttj-5.jpg" data-size="1600x1068" data-med="img/curuit/lttj-5.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-5.jpg" alt="" />
+										<figure>说明会现场</figure>
+									</a>
+									<a href="img/curuit/lttj-6.jpg" data-size="1600x1068" data-med="img/curuit/lttj-6.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-6.jpg" alt="" />
+										<figure>康奈尔大学金融学教授黄明教授</figure>
+									</a>
+									<a href="img/curuit/lttj-7.jpg" data-size="1600x1068" data-med="img/curuit/lttj-7.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-7.jpg" alt="" />
+										<figure>清华大学五道口金融学院院长助理兼MBA教育中心主任、昆吾九鼎金融学讲席教授田轩教授</figure>
+									</a>
+									<a href="img/curuit/lttj-8.jpg" data-size="1600x1068" data-med="img/curuit/lttj-8.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-8.jpg" alt="" />
+										<figure>2016级优秀学生代表郭心蕊同学</figure>
+									</a>
+									<a href="img/curuit/lttj-9.jpg" data-size="1600x1068" data-med="img/curuit/lttj-9.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-9.jpg" alt="" />
+										<figure>2016级优秀学生代表王震同学 </figure>
+									</a>
+									<a href="img/curuit/lttj-10.jpg" data-size="1600x1068" data-med="img/curuit/lttj-10.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-10.jpg" alt="" />
+										<figure>Q&A环节</figure>
+									</a>
+									<a href="img/curuit/lttj-11.jpg" data-size="1600x1068" data-med="img/curuit/lttj-11.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-11.jpg" alt="" />
+										<figure>Q&A环节</figure>
+									</a>
+									<a href="img/curuit/lttj-12.jpg" data-size="1600x1068" data-med="img/curuit/lttj-12.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-12.jpg" alt="" />
+										<figure>现场认真听讲解的学生</figure>
+									</a>
+									<a href="img/curuit/lttj-13.jpg" data-size="1600x1068" data-med="img/curuit/lttj-13.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-13.jpg" alt="" />
+										<figure>现场认真听讲解的学生</figure>
+									</a>
+									<a href="img/curuit/lttj-14.png" data-size="1600x1068" data-med="img/curuit/lttj-14.png" data-med-size="1024x683" data-author="Samuel Rohl">
+										<img src="img/curuit/lttj-14.png" alt="" />
+										<figure>现场认真听讲解的学生</figure>
+									</a>
+								</div>
+							</div>
+							<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+								<!--整个屏幕的遮罩层-->
+								<div class="pswp__bg"></div>
+				
+								<div class="pswp__scroll-wrap">
+				
+									<div class="pswp__container">
+										<div class="pswp__item"></div>
+										<div class="pswp__item"></div>
+										<div class="pswp__item"></div>
+									</div>
+				
+									<div class="pswp__ui pswp__ui--hidden">
+										<!--顶部操作键区域-->
+										<div class="pswp__top-bar">
+											<!--左侧序列-->
+											<div class="pswp__counter"></div>
+											<!--右侧按钮组合-->
+											<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+				
+											<button class="pswp__button pswp__button--share" title="Share"></button>
+				
+											<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+				
+											<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+				
+											<div class="pswp__preloader">
+												<div class="pswp__preloader__icn">
+													<div class="pswp__preloader__cut">
+														<div class="pswp__preloader__donut"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+				
+										<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+											<div class="pswp__share-tooltip"></div>
+										</div>
+				
+										<!--方向键-->
+										<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+										</button>
+				
+										<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+										</button>
+				
+										<!--图片底部对本图片的描述-->
+										<div class="pswp__caption">
+											<div class="pswp__caption__center"></div>
+										</div>
+				
+									</div>
+				
+								</div>
+				
+							</div>
+						</article>
+					</div>
+					<!--项目介绍-->
+					<div id="proIntroduce" style="display:none;position:absolute;left:0;">
+						<div class="Introduce_Link clearfix">
+							<div class="IntroduceLeft">
+								<h4>
+	              			    	<img src="img/curuit/xmjs.png"  />
+	              			   </h4>
+								<ul>
+									<li>
+										<p style="width:auto;float: left;">学
+											<a style="color: transparent;">学制</a>制：
+										</p>
+										<p style="margin-left: 150px;">2年</p>
+									</li>
+									<li>
+										<p style="width:auto;float: left;">上课方式：</p>
+										<p style="margin-left:150px;">
+											隔周周末上课，个别课程采取周四到周日集中授课方式。两次美国集中访学课程，各2-3周。
+										</p>
+									</li>
+									<li>
+										<p style="width:auto;float: left;">课程语言：</p>
+										<p style="margin-left:150px;">
+											中文及英文课程各占50%
+										</p>
+									</li>
+									<li>
+										<p style="width:auto;float: left;">师资阵容：</p>
+										<p style="margin-left:150px;">
+											两校师资各负责50%的教学内容
+										</p>
+									</li>
+									<li>
+										<p style="width:auto;float: left;">招生人数：</p>
+										<p style="margin-left:150px;">
+											70人
+										</p>
+									</li>
+									<li>
+										<p style="width:auto;float: left;">上课地点：</p>
+										<p style="margin-left:150px;">
+											北京清华大学五道口金融学院
+										</p>
+									</li>
+									<li>
+										<p style="width:auto;float: left;">开学日期：</p>
+										<p style="margin-left:150px;">
+											2018年9月
+										</p>
+									</li>
+									<li>
+										<p style="width:auto;float: left;">证书授予：</p>
+										<p style="margin-left:150px;">
+											学习结束后，满足条件的学员将获得MBA双学位——清华大学授予的MBA学位以及清华大学硕士研究生毕业证书，和康奈尔大学授予的MBA学位（与康奈尔大学在其本部所授MBA学位具有完全相同的形式和效力）。
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="LinkRight">
+								<h4>
+	              				<img src="img/curuit/lxfs (1).png"  />
+	              			</h4>
+								<p>
+									如您对清华-康奈尔双学位金融MBA项目及本次活动有任何疑问，请联络清华大学五道口金融学院金融MBA教育中心
+								</p>
+								<p>
+									电话：010-62782760、62797592
+								</p>
+								<p>
+									邮箱：fmba@pbcsf.tsinghua.edu.cn
+								</p>
+								<p style="font-size:1.2rem;">
+									官网：http://fmba.pbcsf.tsinghua.edu.cn/
+								</p>
+								<p style="margin-top: 20px;margin-bottom: 20px;text-align: center;">
+									<img src="img/curuit/ewmm.jpg" />
+								</p>
+								<p>
+									扫描二维码关注项目官方微信：pbcsf-fmba
+								</p>
+							</div>
+						</div>
+						<div class="MBA" style="font-size:1.2rem;">
+							<h3 style="text-align: center;">为什么选择清华-康奈尔双学位金融MBA项目？</h3>
+							<p style="text-align: center;">培养立足国内、兼具国际视野的金融人才和行业领袖！</p>
+							<p style="text-align: center;">培养宏观金融素养，以创新创业为方向，洞悉现代经济</p>
+							<p style="text-align: center;">原理和运行规律，拥有正直品德和承担社会责任的金融管理人才！</p>
+							<p style="text-align: center;margin-top:30px;">
+								<button>立即申请</button>
+							</p>
+						</div>
+						<div class="proIntroduceFoot" style="font-size:1.2rem;">
+							<table class="footCenter clearfix">
+								<tr>
+									<td class="mbachian">
+										<img src="img/curuit/0_29.jpg" />
+									</td>
+									<td class="aboutUs">
+										<p>关于我们- 公司简介- 站长统计- 联系方法- 招聘信息- 客户服务 - 法律</p>
+										<p>声明- 政策隐私- 网站地图</p>
+										<p>Copyright © 2009-2017 mbachina.com Inc. All Rights Reserved </p>
+										<p>MBA中国网 版权所有</p>
+										<p>不良信息举报- 主编邮箱- 版权保护法律顾问：慧学律师事务所- 未经书面授权禁止转载</p>
+										<p>慧学文化传媒（北京）有限公司 版权所有 京ICP证090237号</p>
+									</td>
+									<td class="erweima">
+										<img src="img/curuit/0_26.jpg" />
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="back" style="display:none;">
+					<img src="img/curuit/back2.png" />
+					<p style="font-size:20px;">返回上一页</p>
+				</div>
+			</div>
+		</div>
+		
+
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/share.js"></script>
+	<!--相册js-->
+	<script type="text/javascript" src="js/dist/photoswipe-ui-default.js"></script>
+	<script type="text/javascript" src="js/dist/photoswipe.min.js"></script>
+	<!--自己-->
+	<script type="text/javascript" src="js/recruit.js"></script>
+	<script>
+		//		如果是移动设备则变换展现形式
+		(function browserRedirect() {
+			var sUserAgent = navigator.userAgent.toLowerCase();
+			var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+			var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+			var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+			var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+			var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+			var bIsAndroid = sUserAgent.match(/Android/i) == "android";
+			var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+			var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+			//    document.writeln("您的浏览设备为：");
+			if(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+				//      document.writeln("phone");
+				$("#videoForum dd").css("width", "98%");
+				$("#videoForum dd .font").css("fontSize", "26px");
+				$("#videoForum dd .font a").css("fontSize", "30px");
+			}
+		})();
+
+		//	    相册的初始化
+		(function() {
+
+			var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+				var parseThumbnailElements = function(el) {
+					var thumbElements = el.childNodes,
+						numNodes = thumbElements.length,
+						items = [],
+						el,
+						childElements,
+						thumbnailEl,
+						size,
+						item;
+
+					for(var i = 0; i < numNodes; i++) {
+						el = thumbElements[i];
+
+						// include only element nodes 
+						if(el.nodeType !== 1) {
+							continue;
+						}
+
+						childElements = el.children;
+
+						size = el.getAttribute('data-size').split('x');
+
+						// create slide object
+						item = {
+							src: el.getAttribute('href'),
+							w: parseInt(size[0], 10),
+							h: parseInt(size[1], 10),
+							author: el.getAttribute('data-author')
+						};
+
+						item.el = el; // save link to element for getThumbBoundsFn
+
+						if(childElements.length > 0) {
+							item.msrc = childElements[0].getAttribute('src'); // thumbnail url
+							if(childElements.length > 1) {
+								item.title = childElements[1].innerHTML; // caption (contents of figure)
+							}
+						}
+
+						var mediumSrc = el.getAttribute('data-med');
+						if(mediumSrc) {
+							size = el.getAttribute('data-med-size').split('x');
+							// "medium-sized" image
+							item.m = {
+								src: mediumSrc,
+								w: parseInt(size[0], 10),
+								h: parseInt(size[1], 10)
+							};
+						}
+						// original image
+						item.o = {
+							src: item.src,
+							w: item.w,
+							h: item.h
+						};
+
+						items.push(item);
+					}
+
+					return items;
+				};
+
+				// find nearest parent element
+				var closest = function closest(el, fn) {
+					return el && (fn(el) ? el : closest(el.parentNode, fn));
+				};
+
+				var onThumbnailsClick = function(e) {
+					e = e || window.event;
+					e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+					var eTarget = e.target || e.srcElement;
+
+					var clickedListItem = closest(eTarget, function(el) {
+						return el.tagName === 'A';
+					});
+
+					if(!clickedListItem) {
+						return;
+					}
+
+					var clickedGallery = clickedListItem.parentNode;
+
+					var childNodes = clickedListItem.parentNode.childNodes,
+						numChildNodes = childNodes.length,
+						nodeIndex = 0,
+						index;
+
+					for(var i = 0; i < numChildNodes; i++) {
+						if(childNodes[i].nodeType !== 1) {
+							continue;
+						}
+
+						if(childNodes[i] === clickedListItem) {
+							index = nodeIndex;
+							break;
+						}
+						nodeIndex++;
+					}
+
+					if(index >= 0) {
+						openPhotoSwipe(index, clickedGallery);
+					}
+					return false;
+				};
+
+				var photoswipeParseHash = function() {
+					var hash = window.location.hash.substring(1),
+						params = {};
+
+					if(hash.length < 5) { // pid=1
+						return params;
+					}
+
+					var vars = hash.split('&');
+					for(var i = 0; i < vars.length; i++) {
+						if(!vars[i]) {
+							continue;
+						}
+						var pair = vars[i].split('=');
+						if(pair.length < 2) {
+							continue;
+						}
+						params[pair[0]] = pair[1];
+					}
+
+					if(params.gid) {
+						params.gid = parseInt(params.gid, 10);
+					}
+
+					return params;
+				};
+
+				var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+					var pswpElement = document.querySelectorAll('.pswp')[0],
+						gallery,
+						options,
+						items;
+
+					items = parseThumbnailElements(galleryElement);
+
+					// define options (if needed)
+					options = {
+
+						galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+						getThumbBoundsFn: function(index) {
+							// See Options->getThumbBoundsFn section of docs for more info
+							var thumbnail = items[index].el.children[0],
+								pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+								rect = thumbnail.getBoundingClientRect();
+
+							return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+						},
+
+						addCaptionHTMLFn: function(item, captionEl, isFake) {
+							if(!item.title) {
+								captionEl.children[0].innerText = '';
+								return false;
+							}
+							captionEl.children[0].innerHTML = item.title;
+							return true;
+						}
+
+					};
+
+					if(fromURL) {
+						if(options.galleryPIDs) {
+							// parse real index when custom PIDs are used 
+							// http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+							for(var j = 0; j < items.length; j++) {
+								if(items[j].pid == index) {
+									options.index = j;
+									break;
+								}
+							}
+						} else {
+							options.index = parseInt(index, 10) - 1;
+						}
+					} else {
+						options.index = parseInt(index, 10);
+					}
+
+					// exit if index not found
+					if(isNaN(options.index)) {
+						return;
+					}
+
+					var radios = document.getElementsByName('gallery-style');
+					for(var i = 0, length = radios.length; i < length; i++) {
+						if(radios[i].checked) {
+							if(radios[i].id == 'radio-all-controls') {
+
+							} else if(radios[i].id == 'radio-minimal-black') {
+								options.mainClass = 'pswp--minimal--dark';
+								options.barsSize = { top: 0, bottom: 0 };
+								options.captionEl = false;
+								options.fullscreenEl = false;
+								options.shareEl = false;
+								options.bgOpacity = 0.85;
+								options.tapToClose = true;
+								options.tapToToggleControls = false;
+							}
+							break;
+						}
+					}
+
+					if(disableAnimation) {
+						options.showAnimationDuration = 0;
+					}
+
+					// Pass data to PhotoSwipe and initialize it
+					gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+					// see: http://photoswipe.com/documentation/responsive-images.html
+					var realViewportWidth,
+						useLargeImages = false,
+						firstResize = true,
+						imageSrcWillChange;
+
+					gallery.listen('beforeResize', function() {
+
+						var dpiRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
+						dpiRatio = Math.min(dpiRatio, 2.5);
+						realViewportWidth = gallery.viewportSize.x * dpiRatio;
+
+						if(realViewportWidth >= 1200 || (!gallery.likelyTouchDevice && realViewportWidth > 800) || screen.width > 1200) {
+							if(!useLargeImages) {
+								useLargeImages = true;
+								imageSrcWillChange = true;
+							}
+
+						} else {
+							if(useLargeImages) {
+								useLargeImages = false;
+								imageSrcWillChange = true;
+							}
+						}
+
+						if(imageSrcWillChange && !firstResize) {
+							gallery.invalidateCurrItems();
+						}
+
+						if(firstResize) {
+							firstResize = false;
+						}
+
+						imageSrcWillChange = false;
+
+					});
+
+					gallery.listen('gettingData', function(index, item) {
+						if(useLargeImages) {
+							item.src = item.o.src;
+							item.w = item.o.w;
+							item.h = item.o.h;
+						} else {
+							item.src = item.m.src;
+							item.w = item.m.w;
+							item.h = item.m.h;
+						}
+					});
+
+					gallery.init();
+				};
+
+				// select all gallery elements
+				var galleryElements = document.querySelectorAll(gallerySelector);
+				for(var i = 0, l = galleryElements.length; i < l; i++) {
+					galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+					galleryElements[i].onclick = onThumbnailsClick;
+				}
+
+				// Parse URL and open gallery if it contains #&pid=3&gid=1
+				var hashData = photoswipeParseHash();
+				if(hashData.pid && hashData.gid) {
+					openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+				}
+			};
+
+			initPhotoSwipeFromDOM('.demo-gallery');
+
+		})();
+	</script>
+
+</html>

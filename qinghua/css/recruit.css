@@ -1,0 +1,251 @@
+html{
+  width:100%;
+  height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 100px) and (max-width:400px) {
+	font-size:14px;
+}
+@media only screen and (min-width: 401px) {
+	font-size:18px;
+}
+#bigContainer{
+   width:100%;
+   height: 100%;
+   overflow: hidden;
+}
+/*第一页*/
+#bigContainer .mask{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image:url(../img/curuit/bg01.png);
+    background-size:100% 100%;
+}
+.mask img.down{
+    position: absolute;
+    bottom: 15px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+}
+/*第二页*/
+.curitCon{
+    width:100%;
+    position: absolute;
+    left: 0;
+    /*z-index: 1000;*/
+    background-color: #FFFFFF;
+}
+.curitCon .headCurit{
+    width:100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navCurit{
+    display:inline-block;
+    *zoom:1;                 /*inline-block兼容ie6/7*/
+    *display:inline;
+    float:left;
+}
+.navCurit li{
+    float: left;
+    margin:0 10px;
+    padding:10px 15px;
+    font-size:1.5rem;
+}
+.navCurit .boot{
+    border-bottom: 2px solid darkred;
+}
+.headCurit .share{
+    display: inline-block;
+    width: auto;
+    padding:18px 0;
+    margin-right: 10px;
+    *zoom:1;
+    *display:inline;
+    float:right;
+}
+/*选项卡内容*/
+.conCurit{
+    width: 100%;
+    padding:20px 15px;
+    border-top: 1px solid lightgray;
+}
+#videoForum{
+    width:100%;
+}
+#videoForum .videoOne{
+     border: 1px solid lightgray;
+}
+#videoForum dl{
+    width:100%;
+}
+#videoForum dl dd{
+    width:48%;
+    border:1px solid darkgray;
+    float: left;
+    margin:1% 1%;
+    position: relative;
+}
+#videoForum dl dd .videoMask{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.3);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1000;
+    display: none;
+}
+.videoMask img{
+     position: relative;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+#videoForum dd .font{
+    width:100%;
+    font-size: 18px;
+    line-height:1.6;
+    padding-left:15px;
+    margin-bottom:10px;
+}
+#videoForum dd .font a{
+    font-size: 25px;
+}
+
+/*图集*/
+#picAll{
+	widht:100%;
+	padding:8px 10px;
+}
+#picAll ul li{
+	width:48%;
+	margin:1%;
+	float: left;
+}
+#demo-test-gallery>a{
+	display: inline-block;
+	width:46%;
+	margin:2%;
+	float: left;
+}
+#demo-test-gallery>a>img{
+	width:100%;
+	height:auto;
+}
+#demo-test-gallery>a>figure{
+	width:100%;
+	text-align:center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #000000;
+}
+
+/*项目介绍*/
+#proIntroduce{
+	width:100%;
+}
+#proIntroduce .Introduce_Link{
+	background-image: url(../img/curuit/bg03.png);
+	background-size: 100% 100%;
+	background-color: #b24359;
+}
+#proIntroduce .Introduce_Link .IntroduceLeft{
+	width:50%;
+	padding:15px 35px;
+	float: left;
+}
+.Introduce_Link h4{
+	 margin-top:20px;
+	 margin-bottom: 20px;
+}
+.Introduce_Link h4 img{
+	width: 100%;
+	height:auto;
+}
+.Introduce_Link ul li{
+	 color: #FFFFFF;
+}
+.LinkRight{
+	width:50%;
+	padding:15px 25px;
+	float:left;
+	color:#FFFFFF;
+}
+/*MBA*/
+.MBA{
+	width: 100%;
+	background-image: url(../img/curuit/bg04.png);
+	background-color:#b69369;
+	background-size: 100% 100%;
+	color: #FFFFFF;
+	padding:60px 0;
+}
+.MBA p{
+	margin-top:15px;
+}
+.MBA p button{
+	padding:10px 20px;
+	color: #FFFFFF;
+	background-color:darkred;
+	border:none;
+	outline:none;
+	font-size:20px;
+}
+.MBA p button:hover{
+	background-color:red;
+}
+/*底部*/
+.proIntroduceFoot{
+	width:100%;
+	padding:40px 0;
+	background-color:rgb(42,42,42);
+}
+.proIntroduceFoot .footCenter{
+	width:100%;
+	max-width: 980px;
+	margin: 0 auto;
+	color: #FFFFFF;
+}
+.footCenter .mbachian{
+	width:30%;
+	height:100%;
+	vertical-align: middle;
+}
+
+.footCenter .aboutUs{
+	width:50%;
+}
+.footCenter .erweima{
+	width:20%;
+	text-align: center;
+}
+.footCenter .erweima img{
+	width:60%;
+}
+/*返回上一页的按钮*/
+.back{
+	width:100px;
+	height:100px;
+	/*background-color: red;*/
+	position: fixed;
+	top:50%;
+	right: 0;
+  transform: translateY(-50%);
+  z-index: 3000;
+}
+.back img{
+	width: 100%;
+	
+}
+/*相册效果*/
+
+
+
